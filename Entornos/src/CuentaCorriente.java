@@ -1,11 +1,11 @@
 
 /**
  * Clase que permite crear una cuenta bancaria y realizar operaciones de ingreso o retirada
- * @author IvánManso
+ * @author Ivï¿½nManso
  * @version v1.0
  * @since 30/11/2021
  */
-public class CuentaCorriente implements InterfazCuentaCorriente {
+public class CuentaCorriente implements InterfazCuentaCorriente {//comentario dev
 private static final int ZERO = 0;
 /**
  * 
@@ -33,7 +33,7 @@ private static final int ZERO = 0;
 		tipoInteres = tipo;
 	}
 /**
- * Método que le da valor al nombre de una cuenta
+ * Mï¿½todo que le da valor al nombre de una cuenta
  * @param nom
  */
 	@Override
@@ -41,7 +41,7 @@ private static final int ZERO = 0;
 		nombre = nom;
 	}
 /**
- * Método que devuelve el nombre asociado a una cuenta
+ * Mï¿½todo que devuelve el nombre asociado a una cuenta
  * @return nombre
  */
 	@Override
@@ -49,7 +49,7 @@ private static final int ZERO = 0;
 		return nombre;
 	}
 /**
- * Método para saber el saldo de una cuenta
+ * Mï¿½todo para saber el saldo de una cuenta
  * @return saldo
  */
 	@Override
@@ -57,8 +57,8 @@ private static final int ZERO = 0;
 		return saldo;
 	}
 /**
- * Método para ingresar dinero en una cuenta
- * Lanza una excepción si se intenta ingresar una cantidad negativa
+ * Mï¿½todo para ingresar dinero en una cuenta
+ * Lanza una excepciï¿½n si se intenta ingresar una cantidad negativa
  * @param cantidad
  * @throws Exception
  */
@@ -70,9 +70,9 @@ private static final int ZERO = 0;
 		setSaldo(saldo + cantidad);
 	}
 /**
- * Método para retirar dinero de una cuenta
- * Si la cantidad a retirar es negativa lanza una excepción 
- * o si se intenta retirar más de lo que hay en la cuenta lo muestra en pantalla
+ * Mï¿½todo para retirar dinero de una cuenta
+ * Si la cantidad a retirar es negativa lanza una excepciï¿½n 
+ * o si se intenta retirar mï¿½s de lo que hay en la cuenta lo muestra en pantalla
  * @param cantidad
  * @throws Exception
  */
@@ -87,7 +87,7 @@ private static final int ZERO = 0;
 		setSaldo(saldo - cantidad);
 	}
 /**
- * Método que devuelve la cuenta
+ * Mï¿½todo que devuelve la cuenta
  * @return cuenta
  */
 	@Override
@@ -95,7 +95,7 @@ private static final int ZERO = 0;
 		return cuenta;
 	}
 /**
- * Método que le da un valor a la cuenta
+ * Mï¿½todo que le da un valor a la cuenta
  * @param cuenta
  */
 	@Override
@@ -103,7 +103,7 @@ private static final int ZERO = 0;
 		this.cuenta = cuenta;
 	}
 /**
- * Método que le da un valor al saldo
+ * Mï¿½todo que le da un valor al saldo
  * @param saldo
  */
 	@Override
@@ -111,23 +111,23 @@ private static final int ZERO = 0;
 		this.saldo = saldo;
 	}
 /**
- * Método que devuelve el tipo de interés
- * @return tipoInterés
+ * Mï¿½todo que devuelve el tipo de interï¿½s
+ * @return tipoInterï¿½s
  */
 	@Override
 	public double getTipoInteres() {
 		return tipoInteres;
 	}
 /**
- * Método que le da un valor al tipo de interés
- * @param tipoInterés
+ * Mï¿½todo que le da un valor al tipo de interï¿½s
+ * @param tipoInterï¿½s
  */
 	@Override
-	public void setTipoInteres(double tipoInterés) {
-		this.tipoInteres = tipoInterés;
+	public void setTipoInteres(double tipoInterï¿½s) {
+		this.tipoInteres = tipoInterï¿½s;
 	}
 /**
- * Método que devuelve el valor de ZERO
+ * Mï¿½todo que devuelve el valor de ZERO
  * @return ZERO
  */
 public static int getZero() {
